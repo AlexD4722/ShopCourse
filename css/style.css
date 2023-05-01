@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Poppins;
+    src:url('../font/Poppins-Regular.ttf');
+}
+body{
+    font-family: 'Poppins';
+    background-color: #F5F5F5;
+}
+.selection_01{
+    width: 100%;
+    padding: 5% 0;
+    background-color: #FFFDF4;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.contentCourses{
+    max-width: 40%;
+}
+.contentCourses > h3 {
+    font-size: 45px;
+    font-weight: 400; 
+    color:#374639;
+}
+.contentCourses > p{
+    font-size: 19px;
+    color: #3F514B;
+}
+.list_card_course{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.card_course{
+    width: 23%;
+    flex-shrink: 0;
+}
+.card_course > img{
+    width: 100%;
+}
+.card_course > .detailCourse{
+    margin-top: 10px;
+}
+.card_course > .detailCourse > h4{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #414F42;
+}
+.card_course > .detailCourse > .content_small_note{
+    font-size: 17px;
+    font-weight: 400;
+    color: #414F42;
+    margin: 10px 0;
+}
+.card_course > .detailCourse > .price_course{
+    display: flex;
+}
+.card_course > .detailCourse > .price_course > .price_new{
+    margin-left: 50px;
+    font-size: 20px;
+    color: #3F514B;
+    line-height: 25px;
+}
+.card_course > .detailCourse > .price_course > .price_old{
+    font-size: 17px;
+    color: #72776C;
+    position: absolute;
+
+}
+.card_course > .detailCourse > .price_course > .price_old >.line_price{
+    position: relative;
+    width: 100%;
+    border: 0.2px solid #72776C;
+    height: 1px;
+    display: block;
+    top: -13px;
+    background-color: #72776C;
+    
+}
+.card_course > .detailCourse > .route_of_course {
+    margin-top: 20px;
+}
+.card_course > .detailCourse > .route_of_course > p > span {
+    margin-right: 30px;
+}
+.card_course > .detailCourse > .route_of_course > p{
+  border-top: 1px solid #ECEDEC;
+  padding: 13px 0;
+}
+.card_course > .detailCourse > .route_of_course:last-child {
+    border-bottom: 1px solid #ECEDEC;
+}
+.selection_02{
+    margin-top: 120px;
+    border-radius: 15px;
+    background-color: #FFFF;
+    padding: 2%;
+    display: flex;
+}
+.selection_02 > .section_avatar_brand{
+    max-width: 50%;
+    height: auto;
+    display: flex;
+
+}
+.selection_02 > .section_avatar_brand > img{
+    max-width: 100%;
+    height: fit-content;
+    border-radius: 15px;
+}
+.selection_02 > .section_content{
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
+}
+.selection_02 > .section_content :first-child{
+    text-transform: uppercase;
+    color: #0000004D;
+    font-size: 14px;
+    font-weight: 400;
+}
+.selection_02 > .section_content > #content_brand_icon{
+    margin-top: 35px;
+}
+.selection_02 > .section_content > .content_brand_comment{
+    font-size: 30px;
+    font-weight: 400px;
+    margin: 20px 0;
+}
+.selection_02 > .section_content > :last-child{
+    color: #0000004D;
+}
+
+@media only screen and (max-width: 1060px) {
+    .contentCourses{
+        max-width: 70%;
+    }
+    .list_card_course > .card_course{
+        width: 32%;
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 900px) {
+  
+    .selection_02{
+        flex-wrap: wrap-reverse;
+    }
+    .selection_02 > .section_avatar_brand {
+        max-width: 80%;
+        margin: 30px auto ;
+    }
+    .selection_02 > .section_content {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .contentCourses{
+        max-width: 80%;
+    }
+    .list_card_course{
+        margin-top: 10px;
+    }
+    .contentCourses > h3{
+        font-size: 40px;
+    }
+    .list_card_course > .card_course{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .contentCourses{
+        max-width: 100%;
+    }
+    .contentCourses > h3{
+        font-size: 35px;
+    }
+    .list_card_course > .card_course{
+        width: 100%;
+    }
+    .selection_02 > .section_avatar_brand {
+        max-width: 100%;
+    }
+    .selection_02 > .section_content {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1462px) {
+    /* .selection_02 > .section_avatar_brand{
+        max-width: 100%;
+    
+    } */
+    .selection_02 > .section_content > .content_brand_comment{
+        font-size: 18px;
+    }
+}
+
+
+
+
